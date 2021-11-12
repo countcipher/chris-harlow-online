@@ -32,6 +32,9 @@ body {
 
 section {
   padding: 45px;
+  opacity: .1;
+  -webkit-transition: .7s;
+  transition: .7s;
 }
 
 h1 {
@@ -55,6 +58,7 @@ SECTIONS
   margin: 0 auto;
   min-height: 300px;
   text-transform: capitalize;
+  opacity: 1;
 }
 
 #hero video {
@@ -239,6 +243,14 @@ INDIVIDUAL ELEMENTS
   -webkit-transition: .5s;
   transition: .5s;
   border-radius: 5px;
+}
+
+/*-----------------
+CLASSES
+-------------------
+*/
+.show {
+  opacity: 1;
 }
 
 /*-----------------
