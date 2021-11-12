@@ -1,0 +1,19 @@
+.content{
+    height: 200px;
+    width: 300px;
+    color: #fff;
+    font-size: 30px;
+    background: rebeccapurple;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.numbers{
+    background: red;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+}
