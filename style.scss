@@ -181,6 +181,7 @@ SECTIONS
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        margin-bottom: $bottom-margin;
 
         & .flip-card {
             background-color: transparent;
@@ -258,7 +259,10 @@ SECTIONS
         }
         
         & .flip-card-back {
-            background-color: #2980b9;
+            //background-color: #2980b9;
+            background: url("images/computer.jpg");
+            background-size: cover;
+            background-position: center;
             color: white;
             transform: rotateY(180deg);
         }
