@@ -331,7 +331,8 @@ SECTIONS
   background: url("images/tea.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right top;
+  background-attachment: fixed;
 }
 
 #contact .row {
@@ -386,6 +387,10 @@ SECTIONS
       -ms-flex-align: center;
           align-items: center;
   padding: 45px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 1;
+  display: none;
 }
 
 #contact #contact_modal h1 {
@@ -396,6 +401,10 @@ SECTIONS
 #contact #contact_modal a {
   font-size: 30px;
   color: #fff;
+}
+
+#contact #contact_modal #close_modal_button {
+  margin-top: 25px;
 }
 
 /*-----------------
@@ -434,6 +443,7 @@ INDIVIDUAL ELEMENTS
   position: relative;
   z-index: 41;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -466,6 +476,12 @@ CLASSES FOR JS
 */
 .show {
   opacity: 1;
+}
+
+.reveal {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 /*-----------------

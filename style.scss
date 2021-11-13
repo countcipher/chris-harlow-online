@@ -308,7 +308,8 @@ SECTIONS
     background: url('images/tea.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right top;
+    background-attachment: fixed;
 
     .row{
         display: flex;
@@ -344,6 +345,9 @@ SECTIONS
         justify-content: center;
         align-items: center;
         padding: $section-padding;
+        transition: .5s;
+        opacity: 1;
+        display: none;
 
         & h1{
             font-size: $h1-size;
@@ -353,6 +357,10 @@ SECTIONS
         & a{
             font-size: $h2-size;
             color: #fff;
+        }
+
+        & #close_modal_button{
+            margin-top: 25px;
         }
     }
 }
@@ -390,6 +398,7 @@ INDIVIDUAL ELEMENTS
     position: relative;
     z-index: 41;
     border-radius: 5px;
+    cursor: pointer;
 
     &:hover{
         background-color: $button-hover-color;
@@ -419,6 +428,9 @@ CLASSES FOR JS
 */
 .show{
     opacity: 1;
+}
+.reveal{
+    display: flex !important;
 }
 /*-----------------
 KEYFRAMES
