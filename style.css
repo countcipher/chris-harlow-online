@@ -358,6 +358,7 @@ SECTIONS
 #contact .row h1 {
   text-transform: capitalize;
   font-size: 45px;
+  text-align: center;
 }
 
 #contact .row p {
