@@ -3,6 +3,11 @@ VARIABLES
 -------------------
 */
 /*-----------------
+FONTS
+-------------------
+*/
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+/*-----------------
 ELEMENTS RESET
 -------------------
 */
@@ -97,7 +102,12 @@ SECTIONS
 
 #hero .overlay h2 {
   font-size: 30px;
+  margin: 0;
   margin-bottom: 15px;
+}
+
+#hero .overlay .underline {
+  margin-bottom: 25px;
 }
 
 #profile {
@@ -317,6 +327,77 @@ SECTIONS
           transform: rotateY(180deg);
 }
 
+#contact {
+  background: url("images/tea.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 45px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#contact .row h1 {
+  text-transform: capitalize;
+  font-size: 45px;
+}
+
+#contact .row p {
+  font-size: 30px;
+}
+
+#contact #contact_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 45px;
+}
+
+#contact #contact_modal h1 {
+  font-size: 45px;
+  text-align: center;
+}
+
+#contact #contact_modal a {
+  font-size: 30px;
+  color: #fff;
+}
+
 /*-----------------
 INDIVIDUAL ELEMENTS
 -------------------
@@ -444,6 +525,12 @@ MEDIA QUERIES
     width: 100%;
     height: 500px;
     margin-bottom: 25px;
+  }
+  #contact h1 {
+    font-size: 35px;
+  }
+  #contact h2 {
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

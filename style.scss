@@ -3,7 +3,9 @@ VARIABLES
 -------------------
 */
 $h1-size: 45px;
+$mobile-h1-size: 35px;
 $h2-size: 30px;
+$mobile-h2-size: 25px;
 $section-heading-size: 35px;
 
 $underline-color: #277455;
@@ -16,6 +18,12 @@ $section-padding: 45px;
 $column-padding: 15px;
 
 $bottom-margin: 25px;
+
+/*-----------------
+FONTS
+-------------------
+*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
 /*-----------------
@@ -49,6 +57,7 @@ section{
 }
 h1{
     margin-bottom: $bottom-margin;
+    //font-family: 'Press Start 2P', sans-serif;
 }
 p{
     margin-bottom: $bottom-margin;
@@ -98,7 +107,12 @@ SECTIONS
 
         & h2{
             font-size: $h2-size;
+            margin: 0;
             margin-bottom: 15px;
+        }
+
+        & .underline{
+            margin-bottom: $bottom-margin;
         }
     }
 }
@@ -290,6 +304,59 @@ SECTIONS
         
 }
 
+#contact{
+    background: url('images/tea.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0, .5);
+        padding: 45px;
+        color: #fff;
+        border-radius: 5px;
+
+        & h1{
+            text-transform: capitalize;
+            font-size: $h1-size;
+        }
+
+        & p{
+            font-size: $h2-size;
+        }
+    }
+
+    & #contact_modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.8);
+        z-index: 999;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: $section-padding;
+
+        & h1{
+            font-size: $h1-size;
+            text-align: center;
+        }
+
+        & a{
+            font-size: $h2-size;
+            color: #fff;
+        }
+    }
+}
+
 /*-----------------
 INDIVIDUAL ELEMENTS
 -------------------
@@ -401,6 +468,15 @@ MEDIA QUERIES
                 height: 500px;
                 margin-bottom: $bottom-margin;
             }
+        }
+    }
+    #contact{
+        & h1{
+            font-size: $mobile-h1-size;
+        }
+
+        & h2{
+            font-size: $mobile-h2-size;
         }
     }
 }
